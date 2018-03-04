@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="styles/modified.css" rel="stylesheet">
+  <title>Nickstabadet</title>
+</head>
+
+<body class="bg-light">
+  <header>
+    <h1>Nickstabadet</h1>
+    <p class="pb-3 mb-0">Ett soligt sommarbad</p>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Hem</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Kontakt</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="status.html">Väder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Tillbaka</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="row">
+      <section class="p-3 mt-5 mb-5  col-sm-7 border border-primary">
+        <h2>Åker tågen?</h2>
+        <form onsubmit="return searchTrain()">
+          <div>
+            <label for="userform">Jag åker från...</label> <br>
+            <input type="text" id="userform" class="col-12 border border-success">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-warning">Sök..</button>
+        </form>
+        <br>
+        <table id="train_tabels" class="table table-striped table-light">
+          <thead class="thead-light">
+            <tr>
+              <th>Nr</th>
+              <th>Avgår</th>
+              <th>Ankommer</th>
+            </tr>
+          </thead>
+        </table>
+        <p id="notice">Inga problem i trafiken</p>
+        <div>
+          Åker från: <span id="from-city"></span>
+        </div>
+      </section>
+
+      <section class="p-3 mt-5 mb-5  col-sm-4 offset-sm-1 border border-primary">
+        <h2>Vädret på Nicksta</h2>
+        <div class="table-responsive" >
+          <table id="weather_data" class="table table-striped table-light">
+            <thead class="thead-light">
+              <tr>
+                <th>Klocka</th>
+                <th>Väder</th>
+                <th>Värme</th>
+                <th>Vind</th>
+              </tr>
+            </thead>
+            <!-- <tr>
+            <td>09:00</td>
+            <td>Moln</td>
+            <td>16&#8451;</td>
+            <td>3m/s</td>
+          </tr> -->
+
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <p class="text-secondary text-center">
+      Vill du veta mer? Skicka e-post till
+      <a class="text-warning" href="mailto:oscar.husmark@gmail.com">oscar.husmark@gmail.com</a>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="script/app.js"></script>
+</body>

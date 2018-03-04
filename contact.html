@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="styles/modified.css" rel="stylesheet">
+  <title>Nickstabadet</title>
+</head>
+
+<body class="bg-light">
+  <header>
+    <h1>Nickstabadet</h1>
+    <p class="pb-3 mb-0">Ett soligt sommarbad</p>
+  </header>
+  
+  <nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Hem</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="status.html">Väder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Tillbaka</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article class="p-3 mt-5 mb-5 col-sm-8 offset-sm-2 border border-primary form-control">
+    <form id="Synpunkter">
+      <h2>Lämna dina synpunkter här!</h2>
+      <div class="form-group">
+        <label for="headline">Rubrik</label><br>
+        <input class="form-control" type="text" placeholder="Rubrik" id="headline">
+      </div>
+       
+      <div class="form-group">
+        <label for="description">Beskrivning</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+        <p class="text-muted">Max 100 tecken</p>
+      </div>
+
+      <div class="form-group">
+        <label for="business">Ärende</label><br>
+        <select class="form-control" name="business" id="business">
+            <option value="First choice">Strand</option>
+            <option value="Second choice">Vattenpark</option>
+            <option value="Third choice">Torn</option>
+        </select>
+      </div>
+
+      <div>
+        <div>Vill du få svar på din synpunkt?</div>
+        <input name="remember_me" type="radio" id="remember_yes" />
+        <label for="remember_yes">Ja</label>
+        <input name="remember_me" type="radio" id="remember_no" checked>
+        <label for="remember_no">Nej</label>
+      </div>
+      <br>
+      <button class="btn btn-warning" type="submit">Skicka..</button>
+    </form>
+  </article>
+
+  <hr>
+  <footer>
+    <p class="text-secondary text-center">
+      Vill du veta mer? Skicka e-post till: <a class="text-warning" href="mailto:oscar.husmark@gmail.com">oscar.husmark@gmail.com</a>
+    </p>
+  </footer>
+</body>

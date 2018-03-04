@@ -1,0 +1,140 @@
+@import url("reset.css");
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: #e8eaed;
+  padding-bottom: 200px;
+  min-width: 300px;
+}
+
+#main_title {
+  padding: 2em 0 2em 2em;
+  background-image: url("../assets/images/layout/header-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #242291;
+}
+#main_title h1 {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding-bottom: 0.4em;
+}
+
+#main_title p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #404040;
+}
+
+ul a{
+  display: block;
+  color: #F6F6E8;
+  padding: 8px 8px;
+  text-decoration: none;
+  float: left;
+}
+
+a:hover,
+.active {
+  background-color: #00ACE9;
+}
+
+#center {
+  display: flex;
+}
+
+.stdContainer {
+  margin: 2em 2em 2em 2em;
+  margin-bottom: auto;
+  border: 5px solid #8aa5d1;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #ffffff;
+}
+
+aside {
+  order: 2;
+  text-align: center;
+}
+
+main {
+  order: 1;
+}
+
+article {
+  display: inline-block;
+}
+
+.information figure {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+
+.green_header {
+  color: #6A9A1F;
+  font-weight: 600;
+}
+
+.small_padding {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4em;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+hr {
+  margin: 0 0 0 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #e8eaed;
+}
+
+@media (max-width: 650px) {
+  #center {
+    flex-direction: column;
+  }
+  main {
+    order: 2;
+    max-width: inherit;
+  }
+  aside {
+    max-width: inherit;
+    margin: 2em 2em 2em 2em;
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 350px) {
+  aside {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

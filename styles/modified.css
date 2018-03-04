@@ -1,0 +1,11 @@
+header {
+  padding: 2em 0 0 2em;
+  background-image: url("../assets/images/layout/header-sky.jpg");
+  background-size: cover;
+  color: #242291;
+}
+
+
+section {
+    border: 5px solid #8aa5d1;
+}
