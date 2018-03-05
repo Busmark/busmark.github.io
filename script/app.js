@@ -18,7 +18,6 @@ var trainList = [{
 
 function HTMLrow(obj) {
   var row = '<tr>';    
-  
   for(let prop in obj) {
     row += `<td>${obj[prop]}</td>`;
   }
@@ -39,8 +38,9 @@ function searchTrain() {
   return false;
 }
 
+//kan detta bli fel om anropet kommer från githubPages
 //ajax
-$.get("http://api.openweathermap.org/data/2.5/forecast?q=nynashamn,se&appid=3303a2c629c6fb52ac2ff35987de5999", function(data) {
+$.get("https://api.openweathermap.org/data/2.5/forecast?q=nynashamn,se&appid=3303a2c629c6fb52ac2ff35987de5999", function(data) {
   var weatherDataList = data.list;
   weatherDataList.splice(5);
   weatherDataList = weatherDataList.map(element => {
